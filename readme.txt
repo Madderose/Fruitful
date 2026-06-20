@@ -49,7 +49,7 @@ or find in Appearance > Themes > Install theme, type “Fruitful” in search fi
 -------------------------------------------------------
 
 === Documentation ===
-https://github.com/Fruitfulcode/Fruitful/wiki
+https://github.com/Madderose/Fruitful/wiki
 
 === WP Version ===
 As this theme uses the WordPress customizer feature for most options, it requires at least version 3.4 to work properly.

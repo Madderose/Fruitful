@@ -742,7 +742,7 @@ class cmb_Meta_Box {
 			return self::get_mb_type();
 		}
 
-		if ( ! isset( $meta_box['pages'] ) )
+		if ( ! isset( $meta_box['pages'] ) || empty( $meta_box['pages'] ) )
 			return self::get_mb_type();
 
 		$type = false;

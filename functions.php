@@ -568,7 +568,7 @@ if (!function_exists('fruitful_get_slider')) {
 		}	
 		
 		/*Full Backend Options*/
-		if(!empty($theme_options['slides']) && (count($theme_options['slides']) > 0)) {
+		if(!empty($theme_options['slides']) && is_array($theme_options['slides']) && (count($theme_options['slides']) > 0)) {
 			foreach ($theme_options['slides'] as $key=>$slide) {
 				$path_to_img = $val = '';
 				$val = wp_get_attachment_image_src( esc_attr($slide['attach_id']), 'main-slider');

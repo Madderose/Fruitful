@@ -3380,6 +3380,9 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 					 * @param string $title Unused in this implementation.
 					 */
 					public function before( $title = '' ) {
+						if ( is_wp_error( $title ) ) {
+							$title = $title->get_error_message();
+						}
 						if ( empty( $title ) ) {
 							$title = esc_html( $this->plugin_names[ $this->i ] );
 						}
@@ -3397,6 +3400,9 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 					 * @param string $title Unused in this implementation.
 					 */
 					public function after( $title = '' ) {
+						if ( is_wp_error( $title ) ) {
+							$title = $title->get_error_message();
+						}
 						if ( empty( $title ) ) {
 							$title = esc_html( $this->plugin_names[ $this->i ] );
 						}

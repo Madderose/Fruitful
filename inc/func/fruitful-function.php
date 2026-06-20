@@ -214,7 +214,7 @@ function fruitful_slider_images() {
 	global $fruitful_theme_options;
 	$slides = get_option($fruitful_theme_options->args['opt_name']);
 	$vcount_slides = 0;
-	if(!empty($slides['slides'])) {
+	if(!empty($slides['slides']) && is_array($slides['slides'])) {
 		$vcount_slides  = count($slides['slides']); 
 	}
 	?>
