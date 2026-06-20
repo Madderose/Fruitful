@@ -1,0 +1,36 @@
+{
+  "hotspots": [
+    {
+      "label": "TGM_Plugin_Activation",
+      "risk": 0.628,
+      "type": "CLASS"
+    },
+    {
+      "label": "cmb_Meta_Box",
+      "risk": 0.489,
+      "type": "CLASS"
+    },
+    {
+      "label": "fruitful_get_responsive_style()",
+      "risk": 0.46,
+      "type": "FUNCTION"
+    },
+    {
+      "label": "cmb_Meta_Box_types",
+      "risk": 0.412,
+      "type": "CLASS"
+    },
+    {
+      "label": "fruitful_theme_options",
+      "risk": 0.365,
+      "type": "CLASS"
+    }
+  ],
+  "blast_radius": {
+    "cmb_Meta_Box": 54,
+    "TGM_Plugin_Activation": 53,
+    "cmb_Meta_Box_types": 53,
+    "fruitful_get_theme_options()": 27,
+    "TGMPA_List_Table": 27
+  }
+}
